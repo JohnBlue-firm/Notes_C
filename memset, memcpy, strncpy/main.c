@@ -19,7 +19,8 @@ int main() {
 
     // **memset example: Initialize an array with a specific value**
     char destination_array1[string_length];
-    memset(destination_array1, '*', string_length);  // Fill with asterisks
+    memset(destination_array1, '\0', string_length);     // Fill with \0
+    memset(destination_array1, '*', string_length - 1);  // Fill with asterisks
 
     printf("memset: '%s'\n", destination_array1);  // Output: ********* (null terminator)
 
