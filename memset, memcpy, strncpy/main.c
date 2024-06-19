@@ -19,6 +19,8 @@ memcpy 雖然有給長度 但是通常不準 比較危險 需要\0
 int main() {
     char original_string[] = "Hello, world!";
     int string_length = strlen(original_string) + 1;  // Include null terminator
+                     // sizeof(original_string) 一樣
+                                                      // int array 則沒有 \0 terminator ... 不過可以自行定義 -1, NULL, ...
 
 
 
