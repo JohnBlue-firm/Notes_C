@@ -67,6 +67,7 @@ which can help decide the program section based on conditions (like machine Endi
 // Parameter Checking: yes
 // Easy to debug: yes
 // but compiler can also decide not to inline the function @@
+// cannot force compiler to must inline
 
 // Macro definition for calculating the square of a number
 #define SQUARE(x) ((x) * (x))
