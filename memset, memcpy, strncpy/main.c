@@ -6,6 +6,11 @@ destination可嘗試用更短的string_length
 雖然可能不會有錯誤, 或是可能使用到program本身的空間
 但是已經佔用到未知空間, 容易有undefine behavior, 不建議這樣做
 
+因而不論是 strcpy strncpy memcpy都要求 desition > source
+
+memcpy 雖然有給長度 但是通常不準 比較危險 需要\0
+另外有 memmove 是更安全的方法 如果destination與source有重疊 會確保複製到destination正確
+
 */
 
 #include <stdio.h>
