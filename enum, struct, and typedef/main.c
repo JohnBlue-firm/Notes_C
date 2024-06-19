@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+include <string.h> // for strcpy
 
 // Define an enumeration for days of the week
 typedef enum {
